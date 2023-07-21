@@ -1,0 +1,30 @@
+{
+	"format_version": "1.19.60",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bunny:cinnaplushie"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"xxx",
+			"xyx",
+			"xxx"
+		],
+		"key": {
+			"x": {
+				"item": "wool",
+				"data": 0
+			},
+			"y": {
+				"item": "bunny:cinnarolls"
+			}
+		},
+		"result": [
+			{
+				"item": "bunny:cinnaplushie_item"
+			}
+		]
+	}
+}

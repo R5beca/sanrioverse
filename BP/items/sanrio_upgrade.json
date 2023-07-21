@@ -1,0 +1,15 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bunny:sanrio_upgrade",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "bunny_sanrio_upgrade"
+			},
+			"minecraft:transform_templates": {}
+		}
+	}
+}

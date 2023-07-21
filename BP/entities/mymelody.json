@@ -1,0 +1,207 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "bunny:mymelody",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"is_tamed": {
+				"minecraft:tameable": {
+					"probability": 0.25,
+					"tame_items": "cookie",
+					"tame_event": {
+						"target": "self",
+						"event": "on_tame"
+					}
+				},
+				"minecraft:behavior.follow_owner": {
+					"priority": 4,
+					"speed_multiplier": 1.5,
+					"start_distance": 9,
+					"can_teleport": true
+				},
+				"minecraft:behavior.stay_while_sitting": {
+					"priority": 2
+				},
+				"minecraft:sittable": {
+					"sit_event": {
+						"event": "on_tame",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.ocelot_sit_on_block": {},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "minecraft:yellow_flower"
+										}
+									]
+								}
+							},
+							"use_item": true,
+							"add_items": {
+								"table": "loot_tables/entities/mymelodyinteract.json"
+							}
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"sanrio",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 0.7
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:balloonable": {
+				"mass": 0.75
+			},
+			"minecraft:behavior.float": {
+				"priority": 5
+			},
+			"minecraft:behavior.panic": {
+				"priority": 3,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:behavior.tempt": {
+				"priority": 3,
+				"speed_multiplier": 1.2,
+				"items": [
+					"cookie"
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 6,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 3
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "cookie",
+						"heal_amount": 5
+					}
+				]
+			},
+			"minecraft:tameable": {
+				"probability": 0.25,
+				"tame_items": [
+					"cookie"
+				],
+				"tame_event": {
+					"target": "self",
+					"event": "on_tame"
+				}
+			},
+			"minecraft:sittable": {
+				"sit_event": {
+					"event": "on_tame",
+					"target": "self"
+				}
+			},
+			"minecraft:behavior.ocelot_sit_on_block": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.stay_while_sitting": {
+				"priority": 5
+			},
+			"minecraft:behavior.follow_owner": {
+				"priority": 4,
+				"speed_multiplier": 1.5,
+				"can_teleport": true,
+				"start_distance": 9
+			},
+			"minecraft:behavior.offer_flower": {
+				"priority": 4
+			},
+			"minecraft:color": {
+				"value": 6
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/common_sanrio.json"
+			}
+		},
+		"events": {
+			"on_tame": {
+				"add": {
+					"component_groups": [
+						"is_tamed"
+					]
+				}
+			}
+		}
+	}
+}

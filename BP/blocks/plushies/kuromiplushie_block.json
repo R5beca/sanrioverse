@@ -1,0 +1,46 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bunny:kuromiplushie_block"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.kuromiplushie",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "block_kuromiplushie",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:flammable": {},
+			"minecraft:collision_box": {
+				"size": [
+					8,
+					7,
+					4
+				],
+				"origin": [
+					-5,
+					0,
+					-2
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					8,
+					7,
+					4
+				],
+				"origin": [
+					-5,
+					0,
+					-2
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/kuromiplushie.json",
+			"bridge:rotate_y_on_place": {
+				"flip": true
+			}
+		}
+	}
+}

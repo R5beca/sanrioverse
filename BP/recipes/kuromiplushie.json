@@ -1,0 +1,30 @@
+{
+	"format_version": "1.19.60",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bridge:kuromiplushie"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"xxx",
+			"xyx",
+			"xxx"
+		],
+		"key": {
+			"x": {
+				"item": "wool",
+				"data": 15
+			},
+			"y": {
+				"item": "bunny:kuromimacaroon"
+			}
+		},
+		"result": [
+			{
+				"item": "bunny:kuromiplushie_item"
+			}
+		]
+	}
+}

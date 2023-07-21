@@ -1,0 +1,46 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bunny:mymelodyplushie_block"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mymelodyplushie",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "block_mymelodyplushie",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:flammable": {},
+			"minecraft:collision_box": {
+				"size": [
+					6,
+					8,
+					4
+				],
+				"origin": [
+					-3,
+					0,
+					-2
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					6,
+					8,
+					4
+				],
+				"origin": [
+					-3,
+					0,
+					-2
+				]
+			},
+			"bridge:rotate_y_on_place": {
+				"flip": true
+			},
+			"minecraft:loot": "loot_tables/blocks/mymelodyplushie.json"
+		}
+	}
+}

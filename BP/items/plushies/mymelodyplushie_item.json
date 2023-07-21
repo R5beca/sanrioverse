@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bunny:mymelodyplushie_item",
+			"category": "construction"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "item_mymelodyplushie"
+			},
+			"minecraft:block_placer": {
+				"use_on": [
+					"minecraft:log",
+					"minecraft:log2",
+					"minecraft:wooden_slab",
+					"minecraft:stone_block_slab",
+					"minecraft:planks",
+					"minecraft:stone",
+					"minecraft:grass",
+					"minecraft:grass_path"
+				],
+				"block": "bunny:mymelodyplushie_block"
+			}
+		}
+	}
+}

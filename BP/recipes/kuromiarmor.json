@@ -1,0 +1,19 @@
+{
+	"format_version": "1.19.60",
+	"minecraft:recipe_smithing_transform": {
+		"description": {
+			"identifier": "bunny:kuromiarmor"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"result": [
+			{
+				"item": "bunny:cinnaplushie_item"
+			}
+		],
+		"base": "minecraft:netherite_helmet",
+		"addition": "minecraft:netherite_ingot",
+		"template": "bunny:sanrio_upgrade"
+	}
+}
