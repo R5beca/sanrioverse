@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "bunny:cinnaarmor",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/armor/cinnaarmor"
+			},
+			"geometry": {
+				"default": "geometry.cinnaarmor"
+			},
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

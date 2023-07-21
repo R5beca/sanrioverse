@@ -1,0 +1,63 @@
+{
+	"resource_pack_name": "teste",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"item_mymelodyegg": {
+			"textures": [
+				"textures/items/mymelodyegg"
+			]
+		},
+		"item_cinnaegg": {
+			"textures": [
+				"textures/items/cinnaegg"
+			]
+		},
+		"item_kuromiegg": {
+			"textures": [
+				"textures/items/kuromiegg"
+			]
+		},
+		"item_kuromiplushie": {
+			"textures": [
+				"textures/items/plushies/kuromiplushie"
+			]
+		},
+		"item_cinnaplushie": {
+			"textures": [
+				"textures/items/plushies/cinnaplushie"
+			]
+		},
+		"item_mymelodyplushie": {
+			"textures": [
+				"textures/items/plushies/mymelodyplushie"
+			]
+		},
+		"item_kuromiarmor": {
+			"textures": [
+				"textures/items/armor/kuromiarmor"
+			]
+		},
+		"item_mymelodyarmor": {
+			"textures": [
+				"textures/items/armor/mymelodyarmor"
+			]
+		},
+		"item_cinnaarmor": {
+			"textures": [
+				"textures/items/armor/cinnaarmor"
+			]
+		},
+		"bunny_kuromimacaroon": {
+			"textures": "textures/items/kuromimacaroon"
+		},
+		"bunny_cinnarolls": {
+			"textures": "textures/items/cinnarolls"
+		},
+		"bunny_mymelodycake": {
+			"textures": "textures/items/mymelodycake"
+		},
+		"bunny_sanrio_upgrade": {
+			"textures": "textures/items/sanrio_upgrade"
+		}
+	}
+}

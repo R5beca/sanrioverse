@@ -1,0 +1,23 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "teste",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"block_kuromiplushie": {
+			"textures": [
+				"textures/blocks/kuromiplushie"
+			]
+		},
+		"block_cinnaplushie": {
+			"textures": [
+				"textures/blocks/cinnaplushie"
+			]
+		},
+		"block_mymelodyplushie": {
+			"textures": [
+				"textures/blocks/mymelodyplushie"
+			]
+		}
+	}
+}

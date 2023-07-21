@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.kuromi": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle",
+						"pose_k",
+						"look"
+					],
+					"transitions": [
+						{
+							"walk": "query.modified_move_speed"
+						},
+						{
+							"sit": "query.is_sitting"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"walk": {
+					"animations": [
+						{
+							"walk_k": "query.modified_move_speed"
+						},
+						"look"
+					],
+					"transitions": [
+						{
+							"idle": "!query.modified_move_speed"
+						},
+						{
+							"sit": "query.is_sitting"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"sit": {
+					"animations": [
+						{
+							"sit_k": "query.is_sitting"
+						},
+						"look",
+						"pose_k"
+					],
+					"transitions": [
+						{
+							"idle": "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

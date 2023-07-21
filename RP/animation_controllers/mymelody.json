@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mymelody": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle_m",
+						"pose_m",
+						"look"
+					],
+					"transitions": [
+						{
+							"walk": "query.modified_move_speed"
+						},
+						{
+							"sit": "query.is_sitting"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"walk": {
+					"animations": [
+						{
+							"walk_m": "query.modified_move_speed"
+						},
+						"look"
+					],
+					"transitions": [
+						{
+							"sit": "query.is_sitting"
+						},
+						{
+							"idle": "!query.modified_move_speed"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"sit": {
+					"animations": [
+						{
+							"sit_m": "query.is_sitting"
+						},
+						"pose_m",
+						"look"
+					],
+					"transitions": [
+						{
+							"idle": "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

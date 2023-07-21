@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"bunny"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"header": {
+		"name": "sanrioverse",
+		"description": "adiciona coisas fofas",
+		"min_engine_version": [
+			1,
+			19,
+			60
+		],
+		"uuid": "925769a3-2262-4ca4-8df5-5e547e79f56b",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "88d6307f-1563-4b6a-b6d7-7c31cafb4e37",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "0c3b0e34-19d3-4a64-ba45-7a362d403678",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

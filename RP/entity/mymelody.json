@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bunny:mymelody",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mymelody"
+			},
+			"geometry": {
+				"default": "geometry.mymelody"
+			},
+			"render_controllers": [
+				"controller.render.mymelody"
+			],
+			"spawn_egg": {
+				"texture": "item_mymelodyegg",
+				"texture_index": 0
+			},
+			"animations": {
+				"sit_m": "animation.mymelody.sit",
+				"walk_m": "animation.mymelody.walk",
+				"pose_m": "animation.mymelody.pose",
+				"idle_m": "animation.mymelody.idle",
+				"controller": "controller.animation.mymelody",
+				"look": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}

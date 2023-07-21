@@ -1,0 +1,22 @@
+pack.name=sanrioverse RP
+pack.description=adiciona coisas fofas
+
+item.spawn_egg.entity.bunny:kuromi.name=Spawn Kuromi
+entity.bunny:kuromi.name=Kuromi
+item.spawn_egg.entity.bunny:cinnamoroll.name=Spawn Cinnamoroll
+entity.bunny:cinnamoroll.name=Cinnamoroll
+item.spawn_egg.entity.bunny:mymelody.name=Spawn My Melody
+entity.bunny:mymelody.name=My Melody
+
+item.bunny:kuromiplushie_item=Kuromi Plushie
+item.bunny:cinnaplushie_item=Cinnamoroll Plushie
+item.bunny:mymelodyplushie_item=My Melody Plushie
+
+item.bunny:kuromiarmor=Kuromi Armor
+item.bunny:cinnaarmor=Cinnamoroll Armor
+item.bunny:mymelodyarmor=My Melody Armor
+
+item.bunny:kuromimacaroon=Kuromi Macaroon
+item.bunny:cinnarolls=Cinnamorrol Rolls
+item.bunny:mymelodycake=My Melody Cake
+item.bunny:sanrio_upgrade=Sanrio Upgrade

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "bunny:mymelodyarmor",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/armor/mymelody"
+			},
+			"geometry": {
+				"default": "geometry.mymelodyarmor"
+			},
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

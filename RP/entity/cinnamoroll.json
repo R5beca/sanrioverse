@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bunny:cinnamoroll",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cinnamoroll"
+			},
+			"geometry": {
+				"default": "geometry.cinnamoroll"
+			},
+			"render_controllers": [
+				"controller.render.cinnamoroll"
+			],
+			"spawn_egg": {
+				"texture": "item_cinnaegg",
+				"texture_index": 0
+			},
+			"animations": {
+				"idle": "animation.cinnamoroll.idle",
+				"sit_c": "animation.cinnamoroll.sit",
+				"walk_c": "animation.cinnamoroll.walk",
+				"pose1": "animation.cinnamoroll.pose1",
+				"pose2": "animation.cinnamoroll.pose2",
+				"controller": "controller.animation.cinnamoroll",
+				"look": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			}
+		}
+	}
+}

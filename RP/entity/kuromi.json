@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bunny:kuromi",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/kuromi"
+			},
+			"geometry": {
+				"default": "geometry.kuromi"
+			},
+			"animations": {
+				"idle": "animation.kuromi.idle",
+				"walk_k": "animation.kuromi.walk",
+				"look": "animation.common.look_at_target",
+				"sit_k": "animation.kuromi.sit",
+				"pose_k": "animation.kuromi.pose",
+				"controller": "controller.animation.kuromi"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.kuromi"
+			],
+			"spawn_egg": {
+				"texture": "item_kuromiegg",
+				"texture_index": 0
+			}
+		}
+	}
+}
